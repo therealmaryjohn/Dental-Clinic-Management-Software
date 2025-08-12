@@ -1,0 +1,79 @@
+
+/* General Widget Styling */
+QWidget {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    background-color: #f5f7fa;
+}
+
+/* Main Window Background */
+QMainWindow {
+    background-color: #ffffff;
+}
+
+/* Tab Widget Styling */
+QTabWidget::pane {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+QTabBar::tab {
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 2px;
+}
+
+QTabBar::tab:selected {
+    background: #4CAF50;
+    color: white;
+}
+
+/* Push Button Styling */
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+/* Input Fields Styling */
+QLineEdit, QComboBox, QDateEdit, QTimeEdit {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+/* Table Widget Styling */
+QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f9f9f9;
+    gridline-color: #ddd;
+}
+
+QHeaderView::section {
+    background-color: #eaeaea;
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Label Styling */
+QLabel {
+    font-weight: bold;
+}
+
+/* Group Box Styling */
+QGroupBox {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+}

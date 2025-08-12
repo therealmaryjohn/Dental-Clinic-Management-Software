@@ -1,0 +1,127 @@
+<!doctype html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Invoice 19</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color:#222;
+            margin:30px;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url('file://C:/Users/ajohn34/PycharmProjects/Pilot_Project/Support/watermark.png') no-repeat center;
+            background-size: 60%;
+            opacity: 0.08;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+        .header { display:flex; justify-content:space-between; align-items:center; }
+        .clinic-info { text-align:left; }
+        .clinic-name { font-size:20px; font-weight:700; }
+        .invoice-meta { text-align:right; }
+        .invoice-title { font-size:28px; color:#666; letter-spacing:2px; }
+        hr { border:none; border-top:1px solid #eee; margin:12px 0 18px 0; }
+        table { width:100%; border-collapse:collapse; margin-top:10px; }
+        th, td { padding:8px 10px; border:1px solid #ddd; font-size:14px; }
+        th { background:#f5f8fb; text-align:left; }
+        .right { text-align:right; }
+        .summary-table td { border:none; padding:6px; }
+        .notes-box { border:1px dashed #ccc; padding:10px; margin-top:14px; min-height:40px; }
+        .payment-box { border:1px solid #ddd; padding:10px; margin-top:12px; }
+        .total-row td { font-weight:700; font-size:16px; }
+        .small { font-size:12px; color:#666; }
+        @media print {
+            .no-print { display:none; }
+        }
+    </style>
+    </head>
+    <body>
+    <div class="header">
+        <div class="clinic-info">
+            <div class="clinic-name">Dr. N&#x27;s Dental Studio</div>
+            <div class="small">First Floor, Chovattukunnel Plaza<br>Erattupetta Road, Edappady, Pala<br>Bharananganam, Kerala 686578</div>
+            <div class="small">Phone: +91-XXXXXXXXXX</div>
+        </div>
+        <div class="invoice-meta">
+            <div class="invoice-title">INVOICE</div>
+            <div><strong>Date:</strong> 2025-08-12</div>
+            <div><strong>Invoice #:</strong> 19</div>
+        </div>
+    </div>
+    <hr>
+
+    <div style="display:flex; justify-content:space-between;">
+        <div>
+            <strong>Bill To:</strong><br>
+            JissaShaji (ID:PAT0011)
+        </div>
+        <div>
+            <strong>Patient ID:</strong> PAT0011<br>
+            <strong>Doctor:</strong> Neethu Mathew
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width:45%;">Description</th>
+                <th style="width:8%; text-align:center;">Qty</th>
+                <th style="width:12%; text-align:right;">Rate (₹)</th>
+                <th style="width:10%; text-align:right;">Discount (₹)</th>
+                <th style="width:10%; text-align:right;">Extra (₹)</th>
+                <th style="width:15%; text-align:right;">Line Total (₹)</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>extraction</td>
+                <td style="text-align:center;">1</td>
+                <td style="text-align:right;">400.00</td>
+                <td style="text-align:right;">0.00</td>
+                <td style="text-align:right;">0.00</td>
+                <td style="text-align:right;">400.00</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <table class="summary-table" style="width:100%; margin-top:10px;">
+        <tr>
+            <td style="width:70%;"></td>
+            <td style="width:30%;">
+                <table style="width:100%;">
+                    <tr><td>Subtotal:</td><td style="text-align:right;">₹ 400.00</td></tr>
+                    <tr><td>Invoice Discount:</td><td style="text-align:right;">₹ 0.00</td></tr>
+                    <tr><td>Extra Charges:</td><td style="text-align:right;">₹ 0.00</td></tr>
+                    <tr class="total-row"><td>TOTAL:</td><td style="text-align:right;">₹ 400.00</td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="payment-box">
+        <strong>Payment Type:</strong> ______________________ &nbsp;&nbsp;
+        <strong>Cardholder Name:</strong> ______________________
+        <div style="margin-top:8px;" class="small">If paying by card, please fill card details on the printed copy if needed.</div>
+    </div>
+
+    <div class="notes-box">
+        <strong>Notes:</strong><br>
+    </div>
+
+    <div style="margin-top:18px; text-align:center;">
+        <small class="small">Thank you for choosing Dr. N&#x27;s Dental Studio!</small>
+    </div>
+
+    </body>
+    </html>
+    
